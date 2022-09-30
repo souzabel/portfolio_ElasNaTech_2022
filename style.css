@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Open+Sans:ital,wght@1,300&family=Raleway:ital,wght@1,100&display=swap');
+
+:root {
+    --cor-de-fundo: #f5f5f5;
+    --cor-de-link: rgb(17, 17, 17);
+    --color-titulos: #514f4f;
+  }
+  
+  body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Ibarra Real Nova', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+  ol,
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500");
+  
+  /*Menu*/
+  
+  section.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+    margin: 20px 70px;
+  }
+  /*CABEÇARIO*/
+  header.menu__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--color-titulos);
+  }
+  /*MENU SOBRE PROJETO E CONTATO*/
+  section.menu nav ul.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 16px;
+    width: 500px;
+  }
+  
+  
+  /*SEÇÃO MEIO*/
+  
+  section.title {
+    font-size: 16px;
+    color: var(--color-titulos);
+    margin: 0px 100px;
+  }
+  
+  section.title div.title__div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+  
+  /*titulo principal*/
+  section.title div.title__container h2 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+  }
+  
+  /*imagen de perfil*/
+  section.title img.title__profile {
+    width: 368px;
+  }
+  
+  section.title div.title__div div.title__container h3 {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
+  
+  /*LINK REDES*/
+  section.title div.title__div div.title__container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    padding: 0px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+ 
+
+  /*seção sobre*/
+  section.about {
+    padding: 0px 100px;
+    background-color: var(--color-fondo-azul);
+  }
+  /*seção sobre*/
+  section.about div.about__container {
+  }
+  /*titulo seção sobret */
+  section.about h3.about__title {
+    font-size: 32px;
+  }
+  /*texto seção sobre*/
+  section.about div.about__container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  /*footeer*/
+  section.footer {
+    text-align: center;
+    line-height: 3px;
+  }
+  
+  /* RESPONSIVIDADE */
+  
+  /*Tablet*/
+  @media (max-width: 768px) {
+    /* Menú */
+    section.menu {
+      margin: 5px 10px;
+    }
+  
+    /*cabecera*/
+    header.menu__header {
+      justify-content: flex-start;
+    }
+  
+    /*items del menu*/
+    section.menu nav ul.menu__list {
+      width: auto;
+    }
+  
+    section.menu nav ul.menu__list li:nth-child(1),
+    section.menu nav ul.menu__list li:nth-child(2),
+    section.menu nav ul.menu__list li:nth-child(3),
+    section.menu nav ul.menu__list li:nth-child(4),
+    section.menu nav ul.menu__list li:nth-child(5) {
+      display: none;
+    }
+  
+    /*title*/
+  
+    /*Sección Title*/
+  
+    section.title {
+      margin: 0 20px;
+    }
+  
+    /*titulo principal*/
+    section.title div.title__container h2 {
+      font-size: 30px;
+      padding: 10px;
+      line-height: 30px;
+      /* width: 100%; */
+    }
+  
+    /*imagen de perfil*/
+    section.title img.title__profile {
+      width: 30%;
+      height: 140px;
+    }
+  
+    section.title div.title__div div.title__container h3 {
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+    }
+  
+    /*container link redes*/
+    section.title div.title__div div.title__container ul {
+      width: 100%;
+      font-size: 13px;
+    }
+  
+    /*about*/
+    section.about {
+      padding: 0 20px;
+    }
+    section.about h3.about__title,    
+   }
+  
+  /*Mobile*/
+  @media (max-width: 425px) {
+    /*Menu*/
+  
+    /*Titulo*/
+    section.title div.title__div {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /*Sobre*/
+    section.title img.title__profile {
+      width: 30%;
+      height: 100px;
+    }
+  }
+
+.formulario{
+  text-align: center;
+}
+
+.container {
+  background-position: center;
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 0px 50px 0px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.card-container a {
+  text-decoration: none;
+}
+
+.card-container a:hover {
+  background-color: transparent;
+  border: none;
+}
+
+/* CARD CARDÁPIO */
+.card-decodificador {
+  border-radius: 100%;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c7baba;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: #1e1e2a;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.card-text-decodificador{
+  width: 40%;
+  letter-spacing: 1px;
+  color: rgb(109, 109, 109);
+}
+
+.card-wrapper-decodificador {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-wrapper-decodificador h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.card-wrapper-decodificador p {
+  font-size: 0;
+  visibility: visible;
+  opacity: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.card-decodificador:hover {
+  filter: unset;
+}
+
+.card-decodificador:hover > .card-wrapper-decodificador::before {
+  height: 250px;
+  width: 250px;
+  opacity: 1;
+}
+
+.card-decodificador:hover > .card-wrapper-decodificador p {
+  opacity: 1;
+  visibility: visible;
+  font-size: 14px;
+}
+
+/* CARDS ÓTICA*/
+.card-otica {
+  border-radius: 100%;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c7baba;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: #1e1e2a;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.card-text-otica {
+  width: 40%;
+  letter-spacing: 1px;
+  color: rgb(109, 109, 109);
+}
+
+.card-wrapper-otica {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-wrapper-otica h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.card-wrapper-otica p {
+  font-size: 0;
+  visibility: visible;
+  opacity: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.card-otica:hover {
+  filter: unset;
+}
+
+.card-otica:hover > .card-wrapper-otica::before {
+  height: 250px;
+  width: 250px;
+  opacity: 1;
+}
+
+.card-otica:hover > .card-wrapper-otica p {
+  opacity: 1;
+  visibility: visible;
+  font-size: 14px;
+}
+
+/* CARD JOGO*/
+.card-jogo {
+  border-radius: 100%;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c7baba;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: #1e1e2a;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.card-text-jogo {
+  width: 40%;
+  letter-spacing: 1px;
+  color: rgb(109, 109, 109);
+}
+
+.card-wrapper-jogo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-wrapper-jogo h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.card-wrapper-jogo p {
+  font-size: 0;
+  visibility: visible;
+  opacity: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.card-jogo:hover {
+  filter: unset;
+}
+
+.card-jogo:hover > .card-wrapper-jogo::before {
+  height: 250px;
+  width: 250px;
+  opacity: 1;
+}
+
+.card-jogo:hover > .card-wrapper-jogo p {
+  opacity: 1;
+  visibility: visible;
+  font-size: 14px;
+}
